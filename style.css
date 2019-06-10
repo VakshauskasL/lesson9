@@ -1,0 +1,102 @@
+body{
+    padding: 40px;
+}
+
+
+
+
+table{
+    border:1px solid grey;
+    border-collapse: collapse;
+    width:100%;
+}
+th{
+    border:1px solid grey;
+}
+td{
+    border:1px solid grey;
+    padding: 30px;
+}
+#table tbody tr:first-child{
+    font-size:30px;
+}
+#table tbody tr:last-child{
+font-size:15px;
+}
+
+#table tbody tr:nth-child(2){
+    color:green;
+}
+#table tbody tr:nth-child(odd){
+    background: #888;
+}
+#table tbody tr:nth-child(n+2){
+    color:green;
+}
+/*
+n+2-начнет со 2
+3n-каждый третий выделяет
+3n+2
+:only-child-выберет все элементы,которые являются единственным наследником
+:empty -выделяет объект который не имеет наследников
+
+
+*/
+
+.sel span:last-of-type{
+    /*first-of-type
+    :nth-last-of-type()
+    :nth-of-type()
+*/
+color:red;}
+
+.button{
+    background: red;
+    width:300px;
+    padding: 40px 150px;
+    box-sizing: border-box;/*удобно для body-перестает учитывать padding*//*content-box*/
+    text-align: center;
+    display:table-cell;
+    vertical-align: middle;/*bottom top middle*/
+    height: 150px;
+    border-width: 5px;
+    border-color: blue;
+    border-style: dashed;
+    border:4px dotted fuchsia;
+    border-right: 10px ridge darkcyan;
+    border-radius: 10%;
+    border-radius: 20px;
+    border-radius: 10px 15px 20px 25px;
+    border-radius: 10px 20px;/* крест на крест*/
+    border-radius: 10px/20px;/*ширина/высота*/
+    border-radius: 100px/20px;
+    border-radius: 50%;
+    /*border-top: none;
+    border-bottom: none;
+    border-radius: 100px/40px;*/
+    border-bottom-left-radius:30px;/*скругление нижнее левое*/
+    color:#fff;
+    font-size: 34px;
+    text-shadow: 2px 2px 13px black; 
+    text-shadow: -2px -2px 0 #4d4644,
+    2px -2px 0 #4d4644,
+    -2px 2px #4d4644,
+    2px 2px #4d4644,
+    4px 4px 0 white,
+    5px 5px 0 white,
+    6px 6px 0 white;/* плакатная тень*//* https://css3gen.com/text-shadow/-генератор теней текста*/
+    box-shadow: 5px 3px 4px 2px black,
+    inset 5px 3px 4px 2px black,
+    15px 3px 4px 2px red;
+
+    outline:pink solid 12px; /*рамка над блоком*/
+    outline-offset: -15px;/* отступ*/}
+
+    button:focus{
+        outline:red dotted 4px;
+    }
+
+
+
+
+
